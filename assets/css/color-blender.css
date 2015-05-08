@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+.palette {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  border: solid 1px #ccc;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.circle {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+.circle .label-primary,
+.circle .label-secondary {
+  position: absolute;
+  display: block;
+  height: 200px;
+  width: 200px;
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+.circle .label-secondary {
+  -webkit-transform: translateY(-20px) rotate(60deg);
+  -moz-transform: translateY(-20px) rotate(60deg);
+  -ms-transform: translateY(-20px) rotate(60deg);
+  -o-transform: translateY(-20px) rotate(60deg);
+  transform: translateY(-20px) rotate(60deg);
+}
+.circle .label {
+  display: block;
+  line-height: 1.3;
+  width: 200px;
+  font-size: 90%;
+  font-family: monospace;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #666;
+  background: rgba(255, 255, 255, 0.9);
+  border: solid 1px #ccc;
+  border-radius: .5em;
+  padding: .4em .7em;
+  box-shadow: 0 1px 1px rgba(50, 50, 50, 0.2);
+  -webkit-transform-origin: center top;
+  -moz-transform-origin: center top;
+  -ms-transform-origin: center top;
+  -o-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.circle1 {
+  top: 0px;
+  left: 100px;
+  background: #ccc;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+}
+.circle1 .label-secondary .label {
+  -webkit-transform: rotate(-60deg) translateX(60px);
+  -moz-transform: rotate(-60deg) translateX(60px);
+  -ms-transform: rotate(-60deg) translateX(60px);
+  -o-transform: rotate(-60deg) translateX(60px);
+  transform: rotate(-60deg) translateX(60px);
+}
+
+.circle2 {
+  top: 0px;
+  left: 100px;
+  background: #ccc;
+  -webkit-transform: rotate(120deg) translateY(20px);
+  -moz-transform: rotate(120deg) translateY(20px);
+  -ms-transform: rotate(120deg) translateY(20px);
+  -o-transform: rotate(120deg) translateY(20px);
+  transform: rotate(120deg) translateY(20px);
+}
+.circle2 .label-primary .label {
+  -webkit-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+}
+.circle2 .label-secondary .label {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.circle3 {
+  top: 0px;
+  left: 100px;
+  background: #ccc;
+  -webkit-transform: rotate(-120deg) translateY(20px);
+  -moz-transform: rotate(-120deg) translateY(20px);
+  -ms-transform: rotate(-120deg) translateY(20px);
+  -o-transform: rotate(-120deg) translateY(20px);
+  transform: rotate(-120deg) translateY(20px);
+}
+.circle3 .label-primary .label {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.circle3 .label-secondary .label {
+  -webkit-transform: rotate(60deg) translateX(-60px);
+  -moz-transform: rotate(60deg) translateX(-60px);
+  -ms-transform: rotate(60deg) translateX(-60px);
+  -o-transform: rotate(60deg) translateX(-60px);
+  transform: rotate(60deg) translateX(-60px);
+}
+
+.toolbox {
+  width: 400px;
+  margin: 30px auto;
+  border-bottom: solid 1px #ccc;
+}
+
+.toolrow {
+  display: block;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.display {
+  display: inline-block;
+  width: 2em;
+  overflow: visible;
+  font-family: monospace;
+  text-align: left;
+}
+
+.display,
+input[type="color"],
+input[type="range"] {
+  display: inline-block;
+  line-height: 22px;
+  margin: 0;
+  vertical-align: middle;
+}
